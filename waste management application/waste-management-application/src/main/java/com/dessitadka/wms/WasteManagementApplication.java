@@ -1,4 +1,4 @@
-package com.dessitadka.waste.management.application;
+package com.dessitadka.wms;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
