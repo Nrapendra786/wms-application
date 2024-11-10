@@ -1,4 +1,4 @@
-package com.dessitadka.wms.platesales;
+package com.nrapendra.wms.platesales;
 
 
 import jakarta.persistence.*;
@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Entity
-@Table(name = "grocery_order")
+@Table(name = "plate_sales")
 @Data
 @Builder
 @AllArgsConstructor
@@ -25,10 +25,10 @@ public class PlateSales {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name = "date")
+    @Column(name = "local_date")
     private LocalDate localDate;
 
     @Column(columnDefinition = "jsonb")
     @JdbcTypeCode(SqlTypes.JSON)
-    private Map<Object, Object> plateSales = new HashMap<>();
+    private Map<String, String> salesRecord = new HashMap<>();
 }

@@ -1,4 +1,4 @@
-package com.dessitadka.wms.platesales;
+package com.nrapendra.wms.platesales;
 
 
 import org.springframework.stereotype.Service;

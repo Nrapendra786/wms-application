@@ -1,4 +1,4 @@
-package com.dessitadka.wms.wastecalculation;
+package com.nrapendra.wms.wastecalculation;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

@@ -1,0 +1,13 @@
+{
+  "red_masoor_dal": "5kg",
+  "yellow_dark_dal": "7kg",
+  "yellow_light_dal": "4kg",
+  "green_dal": "5kg",
+  "brown_dal": "5kg",
+  "turmeric_powder": "9kg",
+  "red_chili_powder": "9kg",
+  "mustard_oil": "8kg",
+  "yellow_rice": "10kg",
+  "eggs": "30 pieces",
+  "coca-cola": "20 pieces"
+}

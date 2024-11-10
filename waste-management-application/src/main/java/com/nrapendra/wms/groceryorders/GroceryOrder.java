@@ -1,5 +1,4 @@
-package com.dessitadka.wms.wastecalculation;
-
+package com.nrapendra.wms.groceryorders;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -14,22 +13,30 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Entity
-@Table(name = "waste_calculation")
+@Table(name = "grocery_order")
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class WasteCalculation {
+public class GroceryOrder {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name = "date")
+    @Column(name = "local_date")
     private LocalDate localDate;
 
     @Column(columnDefinition = "jsonb")
     @JdbcTypeCode(SqlTypes.JSON)
-    private Map<Object, Object> wasteCalculation = new HashMap<>();
+    private Map<String, String> items = new HashMap<>();
 
+}
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+class Item {
+    private String itemName;
+    private Long itemQuantity;
 }

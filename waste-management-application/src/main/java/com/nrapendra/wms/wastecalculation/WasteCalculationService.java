@@ -1,4 +1,4 @@
-package com.dessitadka.wms.wastecalculation;
+package com.nrapendra.wms.wastecalculation;
 
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,5 @@
-package com.dessitadka.wms.groceryorders;
+package com.nrapendra.wms.wastecalculation;
+
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -8,28 +9,27 @@ import lombok.NoArgsConstructor;
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
 
+import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
 
 @Entity
-@Table(name = "grocery_order")
+@Table(name = "waste_calculation")
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class GroceryOrder {
+public class WasteCalculation {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name = "request")
-    private String request;
+    @Column(name = "date")
+    private LocalDate localDate;
 
     @Column(columnDefinition = "jsonb")
     @JdbcTypeCode(SqlTypes.JSON)
-    private Map<Object, Object> groceryOrder = new HashMap<>();
-
-
+    private Map<Object, Object> wasteCalculation = new HashMap<>();
 
 }
