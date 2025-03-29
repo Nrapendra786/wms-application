@@ -1,4 +1,6 @@
 Note : I am learning abou Software Development, Devops and AI from this book. Here is the book link : https://www.amazon.com/dp/B0F1Z4LDDH <br/>
+
+
 To design a system for calculating wasted food in a restaurant, we’ll create a model that takes grocery quantities and the number of plates sold as inputs. The goal is to compare the quantity of food ordered with the quantity of food actually used, calculating the waste based on any discrepancies. <br/>
 
 Here's a software design approach to achieve this: <br/>
