@@ -1,3 +1,3 @@
 echo "Running script..."
-cd waste-management-application && mvn clean spring-boot:run
+cd .. && cd waste-management-application && mvn clean spring-boot:run
 echo "Script finished."
