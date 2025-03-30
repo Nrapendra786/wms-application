@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # HOW TO RUN
 Note : Docker must installed and running in the system
 cd [PATH TO PROJECT]
