@@ -1,3 +1,8 @@
+# HOW TO RUN
+Note : Docker must installed and running in the system
+cd [PATH TO PROJECT]
+docker-compose down && mvn clean install && docker-compose up
+
 
 To design a system for calculating wasted food in a restaurant, we’ll create a model that takes grocery quantities and the number of plates sold as inputs. The goal is to compare the quantity of food ordered with the quantity of food actually used, calculating the waste based on any discrepancies. <br/>
 
