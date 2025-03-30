@@ -20,7 +20,6 @@ public class OpenAIController {
 
     @Autowired
     public OpenAIController(OpenAiChatModel openAiChatModel) {
-       // this.chatClient = chatClient;
         this.openAiChatModel=openAiChatModel;
     }
 
@@ -30,9 +29,4 @@ public class OpenAIController {
         return new ResponseEntity<>(openAiChatModel.call(promptTemplate.getTemplate()),HttpStatus.OK);
     }
 
-    @GetMapping(value = "/hello")
-    public ResponseEntity<?> createPoetry(){
-        var plateSales = WasteCalculation.builder().id(1L).build();
-        return new ResponseEntity<>(plateSales, HttpStatus.CREATED);
-    }
 }

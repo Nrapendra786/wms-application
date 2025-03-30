@@ -1,0 +1,27 @@
+
+services:
+  app:
+    build:
+      context: ./
+    container_name: app
+    depends_on:
+      - db
+    environment:
+      - POSTGRES_USER=$YOUR_USERNAME
+      - POSTGRES_PASSWORD=$YOUR_PASSWORD
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/$YOUR_DB_NAME
+      - SPRING_DATASOURCE_USERNAME=$YOUR_USERNAME
+      - SPRING_DATASOURCE_PASSWORD=$YOUR_PASSWORD
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    ports:
+      - "8082:8081"
+  db:
+    image: postgres
+    container_name: db
+    environment:
+      - POSTGRES_USER=$YOUR_USERNAME
+      - POSTGRES_PASSWORD=$YOUR_PASSWORD
+      - POSTGRES_DB=$YOUR_DB_NAME
+    ports:
+      - "5433:5432"
