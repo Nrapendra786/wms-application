@@ -1,6 +1,9 @@
 # This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-maven
 
+# Note : I am learning about Software Development, Devops and AI from this book. 
+# Here is the book link : https://www.amazon.com/dp/B0F1Z4LDDH By Tobias Weissmann (50 microsaas startup ideas)
+
 # This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
 # separate terms of service, privacy policy, and support
