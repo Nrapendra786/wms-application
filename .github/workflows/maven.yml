@@ -48,11 +48,11 @@ jobs:
 
       # Build the Docker image
     - name: Build Docker Image for waste management application
-      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/wms-application/waste-management-application .
+      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/wms-app .
 
       # Push the Docker image to Docker Hub
     - name: Push Docker Image to Docker Hub
-      run: docker push ${{ secrets.DOCKER_USERNAME }}/wms-application/waste-management-application
+      run: docker push ${{ secrets.DOCKER_USERNAME }}/wms-app
 
       # Log out of Docker Hub
     - name: Log out of Docker Hub
