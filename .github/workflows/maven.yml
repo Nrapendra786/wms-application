@@ -52,7 +52,7 @@ jobs:
 
       # Push the Docker image to Docker Hub
     - name: Push Docker Image to Docker Hub
-      run: docker push ${{ secrets.DOCKER_USERNAME }}/wms-application
+      run: docker push ${{ secrets.DOCKER_USERNAME }}/wms-application/waste-management-application
 
       # Log out of Docker Hub
     - name: Log out of Docker Hub
