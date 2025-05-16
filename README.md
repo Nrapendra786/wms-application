@@ -2,7 +2,7 @@
 # HOW TO RUN
 Note : Docker must installed and running in the system<br/>
 cd [PATH TO PROJECT]<br/>
-docker-compose down && mvn clean install && docker-compose up<br/>
+docker-compose down && docker-compose up<br/>
 
 Note : I am learning about Software Development, Devops and AI from this book. Here is the book link : https://www.amazon.com/dp/B0F1Z4LDDH (50 microsaas startup ideas) <br/>
 
